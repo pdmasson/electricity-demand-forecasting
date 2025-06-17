@@ -30,7 +30,7 @@ The following (potential) feature variables were assessed:
 - Weather fields: identified correlated weather fields were Q - global radiation, SQ - sunshine duration, U - relative humidity, and T - temperature. These did not yield improved model performance and were not included.
 
 ## Model Selection and Evaluation
-### Part 1 - Linear Model
+### Part 1 - Linear Models
 We assessed the following Linear Models:
 - Linear Regression
 - SGD Regressor
