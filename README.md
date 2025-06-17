@@ -3,13 +3,13 @@
 ## Introduction
 Electricity demand forecasting is a key component of effective power system management, ensuring that sufficient power is available to meet requirements, while avoiding over-production and waste. Demand forecasting applies to a range of time scales, from short-term forecasting (hours to days ahead), to long-term forecasting (years ahead). Short-term forecasting will inform the active management of power systems, while long-term forecasting will inform planning and infrastructure investments more broadly.
 
-This project aims to build forecasting models using machine learning, to predict electricity demand for the Netherlands on a short-term (day ahead) time scale, at 15 minute intervals.
+This project aims to build (time series) forecasting models using machine learning, to predict electricity demand for the Netherlands on a short-term (day ahead) time scale, at 15 minute intervals.
 
 The project is split over the following notebooks:
 
 ## Data
 ### Electricity Demand Data
-Electricity demand data for the Netherlands is obtained from the [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/). The ENTSO-E Transparency Platform manages the central collection and publication of electricity generation, transportation and consumption data and information for the pan-European market. Data is available from 1 January 2015 onwards. Data is retrieved from the _Total Load - Day Ahead/Actual_ view, per year for the period 2015 - 2025 (up to 30/04/2025), at a 15-minute interval.
+Electricity demand data for the Netherlands is obtained from the [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/). The ENTSO-E Transparency Platform manages the central collection and publication of electricity generation, transportation and consumption data and information for the pan-European market. Data is retrieved from the _Total Load - Day Ahead/Actual_ view, per year for the period 2015 - 2025 (up to 30/04/2025), at a 15-minute interval.
 
 ### Weather Data
 The relationship between various weather fields and elecricity demand is analysed to explore whether these can be included as feature variables. Weather data is obtained from the [Netherlands Meteorological Institute (KNMI)](https://www.knmi.nl/nederland-nu/klimatologie/uurgegevens).
