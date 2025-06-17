@@ -6,6 +6,11 @@ Electricity demand forecasting is a key component of effective power system mana
 This project aims to build (time series) forecasting models using machine learning, to predict electricity demand for the Netherlands on a short-term (day ahead) time scale, at 15 minute intervals.
 
 The project is split over the following notebooks:
+- Part 1: linear models
+- Part 2: RNN models
+- Functions notebook
+
+The majority of the work is performed in Part 1. Part 2 builds on this further through the exploration of RNN models. The Functions notebook is included to summarise helper functions from Part 1 that are re-used in Part 2.
 
 ## Data
 ### Electricity Demand Data
