@@ -44,15 +44,17 @@ The Linear Regression model achieved the best performance. Thereafter, we analys
 We assessed the following RNN models:
 - Simple RNN
 - Deep RNN
-- LSTM
-- GRU
+- Long Short-Term Memory (LSTM)
+- Gated Recurrent Unit (GRU)
 
 The LSTM model achieved the best performance. Thereafter, we analysed the residuals and built a hybrid model combining the LSTM model and an XGBoost Regressor. This did not improve performance further. We included all the RNN models in our final analysis.
 
-### Conclusion
-The hybrid model (Linear Regression/XGBoost Regressor) achieved the best performance, predicting day ahead electricity demand well, with deviations mostly driven by the variability of daily peak profiles, which cannot be captured by lagging data. The RNN models achieved a similar performance to the Linear Regression model, however, these are much slower to train and less explainable.
+<img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/rnn-models.png" width=500 />
 
-![](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/test-predictions.png)
+### Conclusion
+Each of the RNN models performed well, with the LSTM model achieving the best performance, predicting day ahead electricity demand well, with deviations mostly dEach of the RNN models performed well, with the LSTM model achieving the best performance, predicting day ahead electricity demand well, with deviations mostly driven by the variability of daily peak profiles, which cannot be fully captured by lagging data. The Linear Regression model also performed well, especially when considering its simplicity, efficiency of use and explainability. The addition of the XGBoost Regressor to the Linear Regression model (as a hybrid model) further improved performance.
+
+![](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/lstm-predictions.png)
 
 Further investigation should focus on identifying other potential feature variables, with the goal of capturing more of the daily variability in the model forecast.
 
