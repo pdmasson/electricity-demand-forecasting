@@ -6,9 +6,9 @@ Electricity demand forecasting is a key component of effective power system mana
 This project aims to build (time series) forecasting models using machine learning, to predict electricity demand for the Netherlands on a short-term (day ahead) time scale, at 15 minute intervals.
 
 The project is split over the following notebooks:
-- Part 1: linear models
-- Part 2: RNN models
-- Functions notebook
+- [Part 1: linear models](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/Electricity_Demand_Forecast_Part_1.ipynb)
+- [Part 2: RNN models](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/Electricity_Demand_Forecast_Part_2.ipynb)
+- [Functions notebook](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/Functions.ipynb)
 
 The majority of the work is performed in Part 1. Part 2 builds on this further through the exploration of RNN models. The Functions notebook is included to summarise helper functions from Part 1 that are re-used in Part 2.
 
