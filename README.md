@@ -38,7 +38,7 @@ We assessed the following Linear Models:
 
 The Linear Regression model achieved the best performance on the training/validation data. Thereafter, we analysed the residuals and built a hybrid model combining the Linear Regression model and an XGBoost Regressor. This further improved model performance. Both the Linear Regression model and Hybrid model were included in our final analysis.
 
-<img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/linear-model.png" width=500 />
+<img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/linear-model.png" width=450 />
 
 ### Part 2 - Recurrent Neural Networks
 We assessed the following RNN models:
@@ -49,7 +49,7 @@ We assessed the following RNN models:
 
 The GRU model achieved the best performance on the training/validation data.
 
-<img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/rnn-models.png" width=500 />
+<img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/rnn-models.png" width=400 />
 
 ### Conclusion
 Each of the RNN models performed well, with the GRU model achieving the best performance, predicting day ahead electricity demand well, with deviations mostly driven by the variability of daily peak profiles, which cannot be fully captured by lagging data. The Linear Regression model also performed well, especially when considering its simplicity, efficiency of use and explainability. The addition of the XGBoost Regressor to the Linear Regression model (as a hybrid model) further improved performance.
