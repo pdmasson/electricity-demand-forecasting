@@ -1,7 +1,7 @@
 # Electricity Demand Forecasting Project
 
 ## Introduction
-Electricity demand forecasting is a key component of effective power system management, ensuring that sufficient power is available to meet requirements, while avoiding over-production and waste. Demand forecasting applies to a range of time scales, from short-term forecasting (hours to days ahead), to long-term forecasting (years ahead). Short-term forecasting will inform the active management of power systems, while long-term forecasting will inform planning and infrastructure investments more broadly.
+Electricity demand forecasting is a key component of effective power system management, ensuring that sufficient power is available to meet requirements, and that demand and supply are suitably balanced, as is required operationally. Demand forecasting applies to a range of time scales, from short-term forecasting (hours to days ahead), to long-term forecasting (years ahead). Short-term forecasting will inform the active management of power systems, while long-term forecasting will inform planning and infrastructure investments more broadly.
 
 This project aims to build (time series) forecasting models using machine learning, to predict electricity demand for the Netherlands on a short-term (day ahead) time scale, at 15 minute intervals.
 
@@ -22,9 +22,9 @@ The relationship between various weather fields and elecricity demand is analyse
 For predictive periods, forecast weather data (instead of historical weather data) will be used. This is retrieved from the [Open Meteo API](https://open-meteo.com/en/docs/historical-forecast-api), which is linked to KNMI data.
 
 ## EDA and Feature Selection
-The evaluation metric applied is **Mean Absolute Error (MAE)**. This is due to the consistent range of electricity demand data and the expected prediction values in relation to these. In the final assessment, MAE percentage deviations also included on a total basis.
+The evaluation metric applied is **Mean Absolute Error (MAE)**. This is due to the consistent range of electricity demand data and the expected prediction values in relation to these. In the final assessment, MAE percentage deviations are also included on a total basis.
 
-The following (potential) feature variables were assessed:
+The following (potential) feature variables are assessed:
 - Lagging timeseries data: daily values corresponding to the same time interval were the most relevant, when included in weekly batches due to the high correlation of the corresponding day of week and time of day value. We determined that 3 weeks of lagging data was optimal.
 - Weekday/holiday indicators: adding the public holiday feature improves training and validation MAE, while adding the weekday features does not, likely due to this information already being included in lagging data. Only the holiday feature was included.
 - Weather fields: identified correlated weather fields were Q - global radiation, SQ - sunshine duration, U - relative humidity, and T - temperature. These did not yield improved model performance and were not included.
