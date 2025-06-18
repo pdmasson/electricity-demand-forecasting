@@ -47,14 +47,14 @@ We assessed the following RNN models:
 - Long Short-Term Memory (LSTM)
 - Gated Recurrent Unit (GRU)
 
-The LSTM model achieved the best performance on the training/validation. Thereafter, we analysed the residuals and built a hybrid model combining the LSTM model and an XGBoost Regressor. This did not improve performance further. We included all the RNN models in our final analysis.
+The GRU model achieved the best performance on the training/validation data.
 
 <img src="https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/rnn-models.png" width=500 />
 
 ### Conclusion
-Each of the RNN models performed well, with the LSTM and GRU models achieving the best performance, predicting day ahead electricity demand well, with deviations mostly driven by the variability of daily peak profiles, which cannot be fully captured by lagging data. The Linear Regression model also performed well, especially when considering its simplicity, efficiency of use and explainability. The addition of the XGBoost Regressor to the Linear Regression model (as a hybrid model) further improved performance.
+Each of the RNN models performed well, with the GRU model achieving the best performance, predicting day ahead electricity demand well, with deviations mostly driven by the variability of daily peak profiles, which cannot be fully captured by lagging data. The Linear Regression model also performed well, especially when considering its simplicity, efficiency of use and explainability. The addition of the XGBoost Regressor to the Linear Regression model (as a hybrid model) further improved performance.
 
-![](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/lstm-predictions.png)
+![](https://github.com/pdmasson/electricity-demand-forecasting/blob/main/images/gru-predictions.png)
 
 Further investigation should focus on identifying other potential feature variables, with the goal of capturing more of the daily variability in the model forecast.
 
